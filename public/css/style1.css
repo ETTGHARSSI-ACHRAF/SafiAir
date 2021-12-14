@@ -1,0 +1,198 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url("https://fonts.googleapis.com/css?family=Rajdhani:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+/*****---------------------------------------- 1) font-family: 'Rajdhani', sans-serif;
+ 2) font-family: 'Poppins', sans-serif;
+ ----------------------------------------*****/
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #666666;
+  font-size: 14px;
+  font-family: poppins;
+  line-height: 1.80857;
+  font-weight: normal;
+  overflow-x: hidden;
+}
+
+a {
+  color: #1f1f1f;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  padding: 0 0 10px 0;
+  font-weight: normal;
+  line-height: normal;
+  color: #111111;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  font-size: 13px;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+p {
+  width: 50%;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 60px;
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.form-control:focus {
+  border-color: #ffffff !important;
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+}
+
+/**-- heading section --**/
+
+.main_bt {
+  background: #ee580f;
+  color: #fff;
+  padding: 15px 60px 15px 60px;
+  float: left;
+  font-size: 15px;
+  font-weight: 400;
+  border: solid #ee580f 2px;
+  border-radius: 30px;
+  margin: 15px 0px 60px 0px;
+}
+
+.text-bg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  padding: 0;
+  left: 0;
+  text-align: center;
+}
+.banner-main {
+  position: relative;
+}
+.banner-main .text-bg h1 {
+  font-size: 90px;
+  line-height: 108px;
+  text-transform: uppercase;
+  color: #ee580f;
+  font-weight: bold;
+  padding-bottom: 35px;
+  padding-top: 25px;
+}
+.banner-main img {
+  width: 100vw;
+  height: 100vh;
+}
+.white {
+  color: #fff;
+}
+.main-form h3 {
+  float: left;
+  margin-top: -82px;
+  background: #fff;
+  padding: 10px 28px;
+  margin-left: -35px;
+  color: #0a4668;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-form {
+  background: #ffffffe8;
+  padding: 35px 35px;
+}
+.form-control {
+  border: #c2c4c4 solid 1px;
+  padding: 7px 15px;
+  border-radius: inherit;
+  margin-bottom: 10px;
+  color: #cfcece;
+}
+.form-control:focus,
+.form-control:hover {
+  box-shadow: none;
+}
+.form-control:focus {
+  border-color: #c2c4c4 !important;
+}
+
+.main-form .btn {
+  background: #ee580f;
+  color: #fff;
+  float: left;
+  font-size: 15px;
+  font-weight: 400;
+  border: solid #ee580f 1px;
+  padding: 10px 77px;
+  margin: 19px 0px 0px 25px;
+}
+
+.button_section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

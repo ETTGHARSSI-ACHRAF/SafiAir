@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>SafiAir</title>
+</head>
+<body>
+    <section >
+        <div class="banner-main">
+           <img src="images/banner.jpg" alt="#"/>
+           <div class="container">
+              <div class="text-bg">
+                 <h1>SafiAir</h1>
+                 
+                 <div class="button_section"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio totam molestiae inventore corrupti, enim iste dolores repellendus quis tempora temporibus provident quam ipsum modi a, consectetur atque, asperiores harum laboriosam.</p>  </div>
+                 <div class="container">
+                    <form class="main-form"  action="/vols" method="post">
+                       <h3>Organisation de voyage</h3>
+                       <div class="row">
+                          <div class="col-md-9">
+                             <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                   <label >Ville Depart</label>
+                                   <select class="form-control" name="vile_D">
+                                    <option hidden selected>Ville</option>
+                                    <option  value="safi" >Safi</option>
+                                    <option  value="casa">Casa</option>
+                                    <option  value="rabat">Rabat</option>
+                                    <option  value="fes">Fes</option>
+                                 </select>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                   <label >Ville Ariver</label>
+                                   <select class="form-control" name="vile_A">
+                                    <option hidden selected>Ville</option>
+                                    <option value="safi" >Safi</option>
+                                    <option value="casa">Casa</option>
+                                    <option value="rabat">Rabat</option>
+                                    <option value="fes">Fes</option>
+                                 </select>
+                                </div>
+                                
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                   <label >Date depart</label>
+                                   <input class="form-control"  type="date" type="text" name="date_D">
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                   <label >Nombre Place</label>
+                                   <input class="form-control"  type="number" name="nombre_p">
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                 <button type="submit" class="btn">Rechercher</button>
+                               
+                              </div>
+                             </div>
+                             
+                          </div>
+                       </div>
+                    </form>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
+</body>
+</html>

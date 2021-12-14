@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/vols.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Les voles disponible</h1>
+        <ul class="responsive-table">
+          <li class="table-header">
+            <div class="col col-1">Nom Vol</div>
+            <div class="col col-1">Ville D</div>
+            <div class="col col-1">Ville A</div>
+            <div class="col col-1">Date D</div>
+            <div class="col col-1">Date A</div>
+            <div class="col col-1">Heure D</div>
+            <div class="col col-1">Heure A</div>
+            <div class="col col-1">ville Escale</div>
+            <div class="col col-1">prix</div>
+            <div class="col col-1">Resrever</div>
+          </li>
+          <%for(let i = 0 ; i< vols.length ; i++){%>
+            <li class="table-row">
+              <div class="col col-1" data-label="Nom Vol"><%=vols[i].nom_vol%></div>
+              <div class="col col-1" data-label="Ville depart"><%=vols[i].vile_D%></div>
+              <div class="col col-1" data-label="Ville Ariver"><%=vols[i].vile_A%></div>
+              <div class="col col-1" data-label="Date Depart"><%=vols[i].date_D.toLocaleDateString()%></div>
+              <div class="col col-1" data-label="Date Ariver"><%=vols[i].date_A.toLocaleDateString()%></div>
+              <div class="col col-1" data-label="Heure Depart"><%=vols[i].heur_D%></div>
+              <div class="col col-1" data-label="Heure Ariver"><%=vols[i].heur_A%></div>
+              <div class="col col-1" data-label="Heure Ariver"><%=vols[i].ville_escal%></div>
+              <div class="col col-1" data-label="Heure Ariver"><%=vols[i].prix_vol%></div>
+              <div class="col col-1"><a data-bs-toggle="modal" class="btn" href="#exampleModalToggle" role="button">Reserver</a></div>
+            </li>
+            <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalToggleLabel">Ajoter des extras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form action="/validation" method="post" class="d-flex justify-content-center flex-column">
+                      <input type="hidden" value="<%=vols[i].id_vol%>" name="idVol">
+                      <input type="hidden" value="<%=vols[i].prix_vol%>" name="prixVol">
+                      <%for(let j = 0 ; j< extras.length ; j++){%>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="<%=extras[j].id_extra%>" >
+                        <label class="form-check-label" ><%=extras[j].nom_extra%><span class="p-5"><%=extras[j].prix%>DH</span>
+                        </label>
+                      </div>
+                     <%}%>
+                      
+                      <button type="submit" class="btn">Reserver</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <%}%>
+         
+          
+        </ul>
+      </div>
+      
+      
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</html>
