@@ -50,7 +50,7 @@
                       <input type="hidden" value="<%=vols[i].prix_vol%>" name="prixVol">
                       <%for(let j = 0 ; j< extras.length ; j++){%>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="<%=extras[j].id_extra%>" >
+                        <input class="form-check-input" name="extra" type="checkbox" value="<%=extras[j].id_extra%>" >
                         <label class="form-check-label" ><%=extras[j].nom_extra%><span class="p-5"><%=extras[j].prix%>DH</span>
                         </label>
                       </div>

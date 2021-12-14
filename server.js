@@ -17,9 +17,12 @@ app.post('/vols',query.getVols);
 app.post('/confirmation',query.valideResrvation);
 
 app.post('/validation',(req,res)=>{
+// console.log(req.body);
     app.locals.data.idVol=req.body.idVol;
     app.locals.data.prix=req.body.prixVol;
+    app.locals.data.extrs= req.body.extra;
      res.render('inscription');
+    // console.log(app.locals.data);
 });
 
 app.get('/',(req,res)=>{
